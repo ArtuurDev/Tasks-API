@@ -2,6 +2,30 @@
 
 Uma API de gerenciamento de tarefas construída com NestJS, apresentando autenticação Google OAuth 2.0, gerenciamento de tokens JWT e cache Redis.
 
+## Demonstração Visual
+
+### 1. Insomnia - Listagem de Tarefas
+![Insomnia - Listagem de Tarefas](docs/screenshots/insomnia-get-tasks.png)
+> Demonstração do endpoint GET `/tasks` utilizando o Insomnia, exibindo a resposta com tarefas armazenadas e cacheadas no Redis. Mostra a integração da API com ferramentas de teste de requisições REST.
+
+### 2. Tela de Login Google OAuth
+![Tela de Login Google OAuth](docs/screenshots/google-oauth-select-account.png)
+> Tela de seleção de conta do Google durante o fluxo de autenticação OAuth 2.0, permitindo ao usuário escolher qual conta utilizar para acessar o sistema de gerenciamento de tarefas.
+
+### 3. Consentimento Google OAuth
+![Consentimento Google OAuth](docs/screenshots/google-oauth-consent.png)
+> Tela de consentimento do Google OAuth 2.0, onde o usuário autoriza o compartilhamento de informações básicas de perfil e e-mail com a aplicação tasks-management.
+
+### 4. Callback de Autenticação Google
+![Callback de Autenticação Google](docs/screenshots/google-oauth-callback.png)
+> Resposta do endpoint `/google/callback` após autenticação bem-sucedida via Google OAuth 2.0, exibindo mensagem de sucesso e os tokens JWT de acesso e refresh retornados pela API.
+
+### 5. Insomnia - Criação de Tarefa
+![Insomnia - Criação de Tarefa](docs/screenshots/insomnia-post-task.png)
+> Demonstração do endpoint POST `/tasks` no Insomnia, mostrando a criação de uma nova tarefa e a resposta da API com os dados da tarefa criada.
+
+
+
 ## Principais Funcionalidades
 
 - **Autenticação Google OAuth 2.0**
@@ -79,26 +103,4 @@ A aplicação requer as seguintes variáveis de ambiente:
 - JWT
 - TypeScript
 - Zod
-
-## Demonstração Visual
-
-### 1. Insomnia - Listagem de Tarefas
-![Insomnia - Listagem de Tarefas](docs/screenshots/insomnia-get-tasks.png)
-> Demonstração do endpoint GET `/tasks` utilizando o Insomnia, exibindo a resposta com tarefas armazenadas e cacheadas no Redis. Mostra a integração da API com ferramentas de teste de requisições REST.
-
-### 2. Tela de Login Google OAuth
-![Tela de Login Google OAuth](docs/screenshots/google-oauth-select-account.png)
-> Tela de seleção de conta do Google durante o fluxo de autenticação OAuth 2.0, permitindo ao usuário escolher qual conta utilizar para acessar o sistema de gerenciamento de tarefas.
-
-### 3. Consentimento Google OAuth
-![Consentimento Google OAuth](docs/screenshots/google-oauth-consent.png)
-> Tela de consentimento do Google OAuth 2.0, onde o usuário autoriza o compartilhamento de informações básicas de perfil e e-mail com a aplicação tasks-management.
-
-### 4. Callback de Autenticação Google
-![Callback de Autenticação Google](docs/screenshots/google-oauth-callback.png)
-> Resposta do endpoint `/google/callback` após autenticação bem-sucedida via Google OAuth 2.0, exibindo mensagem de sucesso e os tokens JWT de acesso e refresh retornados pela API.
-
-### 5. Insomnia - Criação de Tarefa
-![Insomnia - Criação de Tarefa](docs/screenshots/insomnia-post-task.png)
-> Demonstração do endpoint POST `/tasks` no Insomnia, mostrando a criação de uma nova tarefa e a resposta da API com os dados da tarefa criada.
 
