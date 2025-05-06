@@ -37,9 +37,17 @@ Uma API de gerenciamento de tarefas construída com NestJS, apresentando autenti
 
 ### Tarefas
 - `POST /tasks` - Criar nova tarefa
+  ```json
+  {
+    "title": "string",
+    "description": "string",
+    "dueDate": "2024-01-20", // Data em formato ISO
+    "priority": "LOW" | "MEDIUM" | "HIGT"
+  }
+  ```
 - `GET /tasks` - Listar todas as tarefas (com cache Redis)
 - `GET /tasks/:id` - Obter tarefa específica
-- `PUT /tasks/:id` - Atualizar tarefa
+- `PUT /tasks/:id` - Atualizar tarefa (mesmo formato do POST)
 - `DELETE /tasks/:id` - Deletar tarefa
 
 ## Implementação Técnica
@@ -71,4 +79,3 @@ A aplicação requer as seguintes variáveis de ambiente:
 - JWT
 - TypeScript
 - Zod
-
