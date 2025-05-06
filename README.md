@@ -102,6 +102,3 @@ A aplicação requer as seguintes variáveis de ambiente:
 ![Insomnia - Criação de Tarefa](docs/screenshots/insomnia-post-task.png)
 > Demonstração do endpoint POST `/tasks` no Insomnia, mostrando a criação de uma nova tarefa e a resposta da API com os dados da tarefa criada.
 
-### 6. Insomnia - Listagem de Tarefas
-![Insomnia - Listagem de Tarefas](docs/screenshots/insomnia-get-tasks.png)
-> Nova consulta ao endpoint GET `/tasks` no Insomnia, evidenciando o funcionamento do cache e a listagem das tarefas cadastradas para o usuário autenticado.
